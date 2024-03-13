@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  margin-bottom: 20px;
+  pointer-events: none;
+  width: 10%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg); /* 50% dari 360° */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: rotate infinite 3s linear;
+  }
+}
+
+.tittle{
+  font-size: 48px;
+}
+
+.App-header {
+  background-color: #a6ffbc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(15, 4, 40);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.button-clicked {
+  background-color: #6c757d; /* Ubah warna tombol saat diklik */
+  animation: button-click-animation 0.5s ease; /* Animasi saat diklik */
+}
